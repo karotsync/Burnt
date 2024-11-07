@@ -53,12 +53,13 @@ wget -O $HOME/.xiond/config/genesis.json https://server-5.itrocket.net/testnet/b
 wget -O $HOME/.xiond/config/addrbook.json  https://server-5.itrocket.net/testnet/burnt/addrbook.json
 ```
 
-# set seeds and peers
+**set seeds and peers**
+```
 SEEDS="69e1aa5800ffa82615986eac5f99b77c2b8f1ccb@burnt-testnet-seed.itrocket.net:55656"
 PEERS="a386af218bd4e5d0a5f2dcfbcc1051eff63d059f@burnt-testnet-peer.itrocket.net:55656,eda838e8e0a162667a6d1b9a304f06d4996b6c97@[2001:41d0:203:e4db::5]:26656,f10f5001726e95c62a763f2d020df6b53b19f44a@65.108.134.47:22356,a921118b0ada2c220833e63f648a9e58fcef19ef@65.108.71.140:26756,65e8c0dd01f486121dbd355e406e57492fea9106@15.235.87.88:56656,85e868567ca46f8d94b1fba87b2fa5b42a271439@141.94.240.117:22356,009335a23ee0971519af088e6931a69bbd9e681d@5.9.107.249:15256,f28fcb2d8d4c9c4388e5fdee5b4206fbe5d645f4@144.76.28.47:15256,cf8caf0b8d1cfdde6ea6d497d273639c19767ad5@190.2.149.38:26656,8c810d034caaccfcfc9f6bd57e40f6443609abf1@162.55.130.164:46656,7c0f6b24f3920dcb4a6c37e689d101fd68a09556@78.46.40.246:39656,81b6f3ef9529ed1a8f3ac2c1f848a19566a88baa@65.109.112.144:1020"
 sed -i -e "/^\[p2p\]/,/^\[/{s/^[[:space:]]*seeds *=.*/seeds = \"$SEEDS\"/}" \
        -e "/^\[p2p\]/,/^\[/{s/^[[:space:]]*persistent_peers *=.*/persistent_peers = \"$PEERS\"/}" $HOME/.xiond/config/config.toml
-
+```
 
 # set custom ports in app.toml
 sed -i.bak -e "s%:1317%:${XION_PORT}317%g;
