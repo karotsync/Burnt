@@ -96,7 +96,8 @@ sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.xiond/config/config.t
 sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.xiond/config/config.toml
 ```
 
-# create service file
+**create service file**
+```
 sudo tee /etc/systemd/system/xiond.service > /dev/null <<EOF
 [Unit]
 Description=Burnt node
@@ -111,6 +112,7 @@ LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
+```
 
 # reset and download snapshot
 xiond tendermint unsafe-reset-all --home $HOME/.xiond
