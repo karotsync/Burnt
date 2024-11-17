@@ -135,9 +135,11 @@ pruning: custom: 100/0/19 | indexer: null
 source <(curl -s https://itrocket.net/api/testnet/burnt/autoinstall/)
 ```
 
-Create wallet
-# to create a new wallet, use the following command. don’t forget to save the mnemonic
+**Create wallet**
+to create a new wallet, use the following command. don’t forget to save the mnemonic
+```
 xiond keys add $WALLET
+```
 
 # to restore exexuting wallet, use the following command
 xiond keys add $WALLET --recover
