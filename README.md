@@ -190,21 +190,11 @@ while true; do
 done
 ```
 
-Create validator
-Moniker
-Identity
-Details
-I love blockchain ❤️
-Amount, uxion
-1000000
-Commission rate
-0.1
-Commission max rate
-0.2
-Commission max change rate
-0.01
-Website
+**Create validator**
+```
 cd $HOME
+```
+
 # Create validator.json file
 echo "{\"pubkey\":{\"@type\":\"/cosmos.crypto.ed25519.PubKey\",\"key\":\"$(xiond comet show-validator | grep -Po '\"key\":\s*\"\K[^"]*')\"},
     \"amount\": \"1000000uxion\",
