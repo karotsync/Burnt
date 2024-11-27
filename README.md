@@ -240,10 +240,12 @@ sudo ufw allow ${XION_PORT}656/tcp
 sudo ufw enable
 ```
 
-Delete node
+**Delete node**
+```
 sudo systemctl stop xiond
 sudo systemctl disable xiond
 sudo rm -rf /etc/systemd/system/xiond.service
 sudo rm $(which xiond)
 sudo rm -rf $HOME/.xiond
 sed -i "/XION_/d" $HOME/.bash_profile
+```
