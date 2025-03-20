@@ -52,8 +52,8 @@ sed -i -e "s|^node *=.*|node = \"tcp://localhost:${XION_PORT}657\"|" $HOME/.xion
 
 **download genesis and addrbook**
 ```
-wget -O $HOME/.xiond/config/genesis.json https://server-5.itrocket.net/testnet/burnt/genesis.json
-wget -O $HOME/.xiond/config/addrbook.json  https://server-5.itrocket.net/testnet/burnt/addrbook.json
+wget -O $HOME/.xiond/config/genesis.json https://raw.githubusercontent.com/karotsync/Burnt/refs/heads/main/genesis.json
+wget -O $HOME/.xiond/config/addrbook.json https://raw.githubusercontent.com/karotsync/Burnt/refs/heads/main/addrbook.json
 ```
 
 **set seeds and peers**
