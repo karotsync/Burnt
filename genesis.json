@@ -1,0 +1,747 @@
+{
+  "app_name": "xiond",
+  "app_version": "v14.1.1",
+  "genesis_time": "2025-01-28T16:00:00Z",
+  "chain_id": "xion-testnet-2",
+  "initial_height": 1,
+  "app_hash": null,
+  "app_state": {
+    "07-tendermint": null,
+    "08-wasm": {
+      "contracts": []
+    },
+    "abstractaccount": {
+      "params": {
+        "allow_all_code_ids": false,
+        "allowed_code_ids": [
+          "1"
+        ],
+        "max_gas_before": "5000000",
+        "max_gas_after": "5000000"
+      },
+      "next_account_id": "1"
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "xion1egp7k30mskfxmhy2awk677tnqdl6lfkfxhrwsv",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "xion1xrqz2wpt4rw8rtdvrc4n4yn5h54jm0nn4evn2x",
+          "pub_key": null,
+          "account_number": "1",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "xion14qekdkj2nmmwea4ufg9n002a3pud23y88t6f8m",
+          "pub_key": null,
+          "account_number": "2",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "xion1jt9w26mpxxjsk63mvd4m2ynj0af09cslpgyyl6",
+          "pub_key": null,
+          "account_number": "3",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "xion19w2488ntfgpduzqq3sk4j5x387zynwkn3c2nhx",
+          "pub_key": null,
+          "account_number": "4",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "xion18n4phjmx4d690p6qklmy6eaxsun8qmtd6lrzdv",
+          "pub_key": null,
+          "account_number": "5",
+          "sequence": "0"
+        }
+      ]
+    },
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "xion1egp7k30mskfxmhy2awk677tnqdl6lfkfxhrwsv",
+          "coins": [
+            {
+              "denom": "uxion",
+              "amount": "99999996000000"
+            }
+          ]
+        },
+        {
+          "address": "xion1xrqz2wpt4rw8rtdvrc4n4yn5h54jm0nn4evn2x",
+          "coins": [
+            {
+              "denom": "uxion",
+              "amount": "99999996000000"
+            }
+          ]
+        },
+        {
+          "address": "xion14qekdkj2nmmwea4ufg9n002a3pud23y88t6f8m",
+          "coins": [
+            {
+              "denom": "uxion",
+              "amount": "2000000"
+            }
+          ]
+        },
+        {
+          "address": "xion1jt9w26mpxxjsk63mvd4m2ynj0af09cslpgyyl6",
+          "coins": [
+            {
+              "denom": "uxion",
+              "amount": "2000000"
+            }
+          ]
+        },
+        {
+          "address": "xion19w2488ntfgpduzqq3sk4j5x387zynwkn3c2nhx",
+          "coins": [
+            {
+              "denom": "uxion",
+              "amount": "2000000"
+            }
+          ]
+        },
+        {
+          "address": "xion18n4phjmx4d690p6qklmy6eaxsun8qmtd6lrzdv",
+          "coins": [
+            {
+              "denom": "uxion",
+              "amount": "2000000"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
+          "denom": "uxion",
+          "amount": "200000000000000"
+        }
+      ],
+      "denom_metadata": [
+        {
+          "description": "The native staking token of the Xion network.",
+          "denom_units": [
+            {
+              "denom": "uxion",
+              "aliases": [
+                "microxion"
+              ]
+            },
+            {
+              "denom": "mxion",
+              "exponent": 3,
+              "aliases": [
+                "millixion"
+              ]
+            },
+            {
+              "denom": "XION",
+              "exponent": 6,
+              "aliases": [
+                "xion"
+              ]
+            }
+          ],
+          "base": "uxion",
+          "display": "XION",
+          "name": "xion",
+          "symbol": "XION"
+        }
+      ],
+      "send_enabled": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "consensus": null,
+    "crisis": {
+      "constant_fee": {
+        "denom": "uxion",
+        "amount": "1000"
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "feeabs": {
+      "params": {
+        "native_ibced_in_osmosis": "",
+        "osmosis_query_twap_path": "/osmosis.twap.v1beta1.Query/ArithmeticTwapToNow",
+        "chain_name": "",
+        "ibc_transfer_channel": "",
+        "ibc_query_icq_channel": "",
+        "osmosis_crosschain_swap_address": ""
+      },
+      "epochs": [],
+      "port_id": "feeabs"
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "feeibc": {
+      "identified_fees": [],
+      "fee_enabled_channels": [],
+      "registered_payees": [],
+      "registered_counterparty_payees": [],
+      "forward_relayers": []
+    },
+    "genutil": {
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "✅ CryptoCrew Validators",
+                  "identity": "",
+                  "website": "https://ccvalidators.com",
+                  "security_contact": "support@ccvalidators.com",
+                  "details": "We power the interchain | ccvalidators.com"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "xionvaloper18n4phjmx4d690p6qklmy6eaxsun8qmtd3ugy9l",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "J9ExO8XqfDmjdc8HtxgVr8jiJ9GGXhNsF72V/rSha7w="
+                },
+                "value": {
+                  "denom": "uxion",
+                  "amount": "1000000"
+                }
+              }
+            ],
+            "memo": "826c5a69711e00079d0f3a1ec89f329d4e6888ba@127.0.0.1:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AvZta8noe7MQWriAf16YpxGzgelcxDhOtJppVQcpVfWm"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "VisaKV6Z/VAPYmcxWJvWcu3UTf45GVhkko7toupDC1ts0FBIFCStNZEaNLECyxml4/3tnS3tlE3u0th3TjTJnA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "kingnodes 👑",
+                  "identity": "30E6CD38D9721222",
+                  "website": "https://kingnodes.com",
+                  "security_contact": "security@kingnodes.com",
+                  "details": "Professional PoS validator. Join our community of delegators Telegram: https://t.me/kingnodes Twitter: https://twitter.com/kingnodes"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.200000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "xionvaloper19w2488ntfgpduzqq3sk4j5x387zynwkn6mp4l4",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "eRglLD++N74olNFWeq4okP+FvQalo3MJMmWEVLxD+EM="
+                },
+                "value": {
+                  "denom": "uxion",
+                  "amount": "1000000"
+                }
+              }
+            ],
+            "memo": "244de62d65f4247308e2621b524eddc1b734a0a2@160.250.106.105:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AhHs+4Sx10vIdWyHU0GU7Xn+ukDtNy0UeHdQ01jtOkKJ"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "rlCuyDs+rlo0zTs5gptcqHMbbjYnusK/Lt2mtQjy65J8yXbgRJkTSLMKm2INVggbmIDCcSXgFQ/rcDSZNn0NyA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": " Lavender.Five Nodes 🐝",
+                  "identity": "F87ADDB700C0CC94",
+                  "website": "https://www.lavenderfive.com/",
+                  "security_contact": "security@lavenderfive.com",
+                  "details": "Fortifying crypto networks with Horcrux security, slash insurance, and open source contributions. Connect with us at https://linktr.ee/lavenderfive."
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "xionvaloper14qekdkj2nmmwea4ufg9n002a3pud23y8vg300g",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "c/GhKfh2szPhWZgYjHYlSXwxrgJCaIuVuAmt2CPw+n8="
+                },
+                "value": {
+                  "denom": "uxion",
+                  "amount": "1000000"
+                }
+              }
+            ],
+            "memo": "7a8ed0181e7f3318807a1e2bdbbcaf9e2560f52c@5.0.1.0:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AgDrjXJ1+/lwJdf+fekEXKwLpA30N7F/Z3ESi/Sn7Rw4"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "su8bxXqYtsILRCK9qZGRub5hEuL7/zPyTnUpZcKLaD8Fc9U9X4wC0YkqsR28aSgSswE89NhektYFnCg+BDFQGA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "polkachu.com",
+                  "identity": "0A6AF02D1557E5B4",
+                  "website": "https://polkachu.com",
+                  "security_contact": "hello@polkachu.com",
+                  "details": "Polkachu is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@polkachu.com"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "xionvaloper1jt9w26mpxxjsk63mvd4m2ynj0af09csl2t0zhf",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "vwNECPjmgTI66zSlfuc8wyW2X2UMvyg1J8i4ffYCBHI="
+                },
+                "value": {
+                  "denom": "uxion",
+                  "amount": "1000000"
+                }
+              }
+            ],
+            "memo": "b803e7fe11624475f99c72ee10f50d2de183b0d3@65.109.113.219:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "As1WcJsvf1NQgRlS8a2PHuueKhHlCYrFe3VooMxQdflR"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "agVU71uEBwF3kvMt/g73Iz/Xs3FkwWshc1JghAWGFVNIAMGXVR7ZYwtYGh0DQT/9/t5mvCZquHjLk//jlb50Cw=="
+          ]
+        }
+      ]
+    },
+    "globalfee": {
+      "params": {
+        "minimum_gas_prices": [
+          {
+            "denom": "uxion",
+            "amount": "0.001000000000000000"
+          }
+        ],
+        "bypass_min_fee_msg_types": [
+          "/xion.v1.MsgSend",
+          "/xion.v1.MsgMultiSend",
+          "/xion.jwk.v1.MsgDeleteAudience",
+          "/xion.jwk.v1.MsgDeleteAudienceClaim",
+          "/cosmos.authz.v1beta1.MsgRevoke",
+          "/cosmos.feegrant.v1beta1.MsgRevokeAllowance"
+        ],
+        "max_total_bypass_min_fee_msg_gas_usage": "1000000"
+      }
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": null,
+      "voting_params": null,
+      "tally_params": null,
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "uxion",
+            "amount": "1000000000"
+          }
+        ],
+        "max_deposit_period": "24h0m0s",
+        "voting_period": "24h0m0s",
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
+        "proposal_cancel_ratio": "0.500000000000000000",
+        "proposal_cancel_dest": "",
+        "expedited_voting_period": "3600s",
+        "expedited_threshold": "0.667000000000000000",
+        "expedited_min_deposit": [
+          {
+            "denom": "uxion",
+            "amount": "5000000000"
+          }
+        ],
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true,
+        "min_deposit_ratio": "0.010000000000000000"
+      },
+      "constitution": ""
+    },
+    "group": {
+      "group_seq": "0",
+      "groups": [],
+      "group_members": [],
+      "group_policy_seq": "0",
+      "group_policies": [],
+      "proposal_seq": "0",
+      "proposals": [],
+      "votes": []
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "*"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0",
+        "params": {
+          "upgrade_timeout": {
+            "height": {
+              "revision_number": "0",
+              "revision_height": "0"
+            },
+            "timestamp": "600000000000"
+          }
+        }
+      }
+    },
+    "ibchooks": {},
+    "interchainaccounts": {
+      "controller_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "ports": [],
+        "params": {
+          "controller_enabled": true
+        }
+      },
+      "host_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "port": "icahost",
+        "params": {
+          "host_enabled": true,
+          "allow_messages": [
+            "*"
+          ]
+        }
+      }
+    },
+    "jwk": {
+      "params": {
+        "time_offset": "30000000000",
+        "deployment_gas": "10000"
+      },
+      "audienceList": [
+        {
+          "aud": "project-test-5ae234a7-6b74-46af-a7b7-969f3df38cc0",
+          "key": "{\"alg\":\"R256\",\"e\":\"AQAB\",\"kty\":\"RSA\",\"n\":\"1pAzc7xPeyJOYtmq90AQ7QYbpKKsHAfc6eDg44a-5oV-HPyMnAKgk_YwGzVY6xNVFiOYtDFszcE_Ed1DxqJMXe6WMMvcwLlfNoG4SlbKkUzM5RKwxLdgPvNguMtxOy_qc3BVtlWJyQbEIY26IOs7kR1IEPZ2Z1QTXw5ttEM-4CAoS7nSHNNuMzyC7fgFYURCIvJyhKrrtO6fS6qOu0pa42-IQc_jprbyTlfCYHAGCIqZxYjOTf36yg1jobg5JhWHc2bwEyI8E_6rj0sLzMjUvC59y8sF1_ZF8Zn3IxK0z8Tnj_rA04FTG47L2FZQvOvQzxsJBJAFKLi6LX_S5pA7RHBe1tIb-UIh43WNPBgXLrVpC8dafS31BZtoQso9uSFbmNVvIyHy7vq-YON5GnfM7EK-DxOrBuAkchDDpS2y1ciiK-Em4v2NH8dIl4-P0kVxchKuNlZDBdf4XoF3Vun6DgTaa_Tu_YcdB1j1bwFi8S2pyk6N2wXYwO9FLoQhIQRCQHDq6lksGrx9PvC1WoYTHMjG8aTY_XV6x8vd5mjybjw620YL_Xu-8ByA_xRDD3gbdNIZ4hbFs5ZehpO0yMroSk6Tf0ujteXtQ7GqLarsU_ROHnMDQoNiQaRN6NRQ-IwqN9x4rpy-DN5ErMGjt-QFKhLrcjvpq8zQ0u57THBWS0E\"}",
+          "admin": "xion1xrqz2wpt4rw8rtdvrc4n4yn5h54jm0nn4evn2x"
+        }
+      ]
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "uxion",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "nft": {
+      "classes": [],
+      "entries": []
+    },
+    "packetfowardmiddleware": {
+      "params": {
+        "fee_percentage": "0.000000000000000000"
+      },
+      "in_flight_packets": {}
+    },
+    "params": null,
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "10000",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "10m0s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.001000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "21600s",
+        "max_validators": 35,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "uxion",
+        "min_commission_rate": "0.050000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "tokenfactory": {
+      "params": {
+        "denom_creation_fee": [
+          {
+            "denom": "uxion",
+            "amount": "1000000000"
+          }
+        ],
+        "denom_creation_gas_consume": "2000000"
+      },
+      "factory_denoms": []
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
+    },
+    "upgrade": {},
+    "vesting": {},
+    "wasm": {
+      "params": {
+        "code_upload_access": {
+          "permission": "Everybody",
+          "addresses": []
+        },
+        "instantiate_default_permission": "Everybody"
+      },
+      "codes": [],
+      "contracts": [],
+      "sequences": []
+    },
+    "xion": {
+      "platform_percentage": 0,
+      "platform_minimums": []
+    }
+  },
+  "consensus": {
+    "params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1"
+      },
+      "evidence": {
+        "max_age_num_blocks": "100000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "1048576"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      },
+      "version": {
+        "app": "0"
+      },
+      "abci": {
+        "vote_extensions_enable_height": "0"
+      }
+    }
+  }
+}
